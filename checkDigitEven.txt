@@ -1,0 +1,17 @@
+boolean evenDigitsOnly(int n) {
+    boolean check = true;
+    int temp = n;
+    ArrayList<Integer> array = new ArrayList<Integer>();
+    do{
+        array.add(temp % 10);
+        temp /= 10;
+    } while  (temp > 0);
+    
+    for(int i=0; i<array.size(); i++){
+        if(array.get(i)%2!=0){
+            check = false;
+        }
+    }
+    
+    return check;
+}
