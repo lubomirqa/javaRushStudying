@@ -12,6 +12,5 @@ boolean evenDigitsOnly(int n) {
             check = false;
         }
     }
-    
     return check;
 }
